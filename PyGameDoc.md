@@ -23,3 +23,20 @@
 星型不过不是用polygon画的, 而是用line连起
 
 #### 遗留问题, 想写一个Eventcatch, 然后重复展现到屏幕上
+
+
+### 2017. 6. 10
+
+###任务
+完成一个EventCatch , 效果还行
+完成了Chapter的第一个部分colorkey
+
+###问题
+font.get_linesize()这个方法到底有与 font的大小有什么区别, 在例子中我的fontsize为16 , 但是get_linesize()得到的值为20
+
+
+###截图
+![](./image/选区_088.png)
+
+###遗留问题
+想在colorkey.py 再绘制个圆形沿直线运动的画面
