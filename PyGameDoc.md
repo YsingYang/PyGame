@@ -40,3 +40,18 @@ font.get_linesize()这个方法到底有与 font的大小有什么区别, 在例
 
 ###遗留问题
 想在colorkey.py 再绘制个圆形沿直线运动的画面
+
+### 2017. 6. 12
+
+####内容
+本章内容主要是对alpha这个值的理解, alpha值主要影响着suface的透明度, 但由于图片格式不同, 所以不一定每种格式都会有alpha的值, 比如jpeg就没有
+但是我们可以通过改变一些方法使得其对能有alpha的作用
+set_alpha
+![](/home/ysing/桌面/选区_096.png)
+1. 可以看出, alpha的增大, 图片的透明度是降低的, 但alpha为0时, 支持alpha就会变成全透明
+2. 对于左下角的第二章set colorkey, 当且进当surface的像素为(255, 255, 255)时 才会变为全透明(假设设置的colorkey 为(255, 255, 255))
+3. 对于最后每一个像素设置pixel-alpha, 因为jpg并没有alpha通道, 所以对jpg图片是没有用的, 但是png有着alpha通道, 所以会起到相应的效果
+
+
+
+###
