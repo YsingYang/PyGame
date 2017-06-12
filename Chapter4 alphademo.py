@@ -34,7 +34,7 @@ def write(msg = 'pygame is cool', size = 24, color=(255, 255, 255)):
 
 def alphademo(width = 800, height = 600):
     pygame.init()
-    screen = pygame.display.set_mode((width, height))
+    screen = pygame.display.set_mode((width, height), pygame.RESIZABLE |pygame.DOUBLEBUF , 32) #第二个参数可以通过设置为pygame.FULLSCREEN来设置全屏
     background = pygame.Surface(screen.get_size()).convert()
 
     venus = pygame.image.load(os.path.join('resource', '800px-La_naissance_de_Venus.jpg')).convert()
@@ -98,6 +98,7 @@ def alphademo(width = 800, height = 600):
     clock = pygame.time.Clock()
     mainloop = True
     effects = False
+    SCREEN_SIZE = screen.get_size()
     while mainloop:
         clock.tick(30)
         screen.blit(background, (0, 0))
@@ -106,6 +107,10 @@ def alphademo(width = 800, height = 600):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 mainloop = False
+            elif event.type == pygame.VIDEORESIZE:
+                SCREEN_SIZE = event.size
+                screen = pygame.display.set_mode(SCREEN_SIZE, pygame.RESIZABLE, 32)
+                pygame.display.set_caption("Window resuzed to " + str(event.size))
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     mainloop = False
@@ -114,6 +119,17 @@ def alphademo(width = 800, height = 600):
                     # if modeNr > 9:
                     #    modeNr = 0 # cycle throug number 0 to 9
                     modeNr = (modeNr + 1) % len(modelist)
+
+        screenWidth, screenHeight = SCREEN_SIZE
+        #print(background.get_height(), background.get_width())#range(start, stop[, step])
+        #for y in range(0, screenHeight, background.get_height()):
+        #    for x in range(0, screenWidth, background.get_width()):
+        #        screen.blit(background, (x, y))
+        #这里相当于当x, y > background.size()时, 在screen一张图片外, 另外绘制一张background
+        #
+        background = pygame.transform.scale(background, SCREEN_SIZE)
+        #将背景图片改为合适的大小
+        screen.blit(background, (0, 0 ))
 
         mode = pygame.constants.__dict__[modelist[modeNr]]
 
