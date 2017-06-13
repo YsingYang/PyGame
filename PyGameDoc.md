@@ -49,7 +49,7 @@ font.get_linesize()这个方法到底有与 font的大小有什么区别, 在例
 本章内容主要是对alpha这个值的理解, alpha值主要影响着suface的透明度, 但由于图片格式不同, 所以不一定每种格式都会有alpha的值, 比如jpeg就没有
 但是我们可以通过改变一些方法使得其对能有alpha的作用
 set_alpha
-![](/home/ysing/桌面/选区_096.png)
+![](./image/选区_096.png)
 1. 可以看出, alpha的增大, 图片的透明度是降低的, 但alpha为0时, 支持alpha就会变成全透明
 2. 对于左下角的第二章set colorkey, 当且进当surface的像素为(255, 255, 255)时 才会变为全透明(假设设置的colorkey 为(255, 255, 255))
 3. 对于最后每一个像素设置pixel-alpha, 因为jpg并没有alpha通道, 所以对jpg图片是没有用的, 但是png有着alpha通道, 所以会起到相应的效果
@@ -62,4 +62,21 @@ set_alpha
 2. 其实, 窗口的伸缩肯定为操作系统中的一个事件, 那么我们就需要捕获event.type == pygame.VIDEORESIZE, 这一事件, 这一事件包括三个属性 ,size, w, h 
 
 3. 添加了一个Resize的练习
-4. 
+
+
+### 2017. 6. 13
+
+####内容
+1. Frame-base movement
+
+
+####注意到的几个问题
+1. 对于该程序的staticDraw的原理, 无非就是将其画在background上, 而且该ball并没有加入到moveing函数内, 所以他的x, y轴并不会移动. (对于画在background还是screen我觉得并不是关键, 关键在于是否在loopaction中绘制的) , 只不过staticDraw如果flip()之后原先的ball就会消失, 所以staticDraw时 画在background上,background是不会被Refresh掉的. 
+2. 对于这三局语句
+````
+self.screen.blit(self.background, (0, 0))
+draw()
+pygame.display.flip()
+````
+最好注意一下优先顺序, 不然如果draw了之后, 再draw上background, 那么background不是透明的, 就会将screen上的ball给覆盖掉
+![](./image/选区_097.png)
