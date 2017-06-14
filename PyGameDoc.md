@@ -80,3 +80,20 @@ pygame.display.flip()
 ````
 最好注意一下优先顺序, 不然如果draw了之后, 再draw上background, 那么background不是透明的, 就会将screen上的ball给覆盖掉
 ![](./image/选区_097.png)
+
+
+### 2017. 6. 14
+
+####内容
+1. Time-Based movement
+昨天的程序中, 开始是的, 所以是Frame-base movement, 就是说移动距离每一帧是一样的, 所以会导致帧数会影响ball的移动速度, 为了避免机器性能间差异导致的图形移动差异, 可以采用Time-base movement, 如下代码所示, 每一帧的时间不同, 但总体1秒内移动的距离是一样的, 但是如果帧数过低, 会出现卡顿的效果
+
+```
+    ballx += dx * seconds #以时间为单位移动
+    bally += dy * seconds
+```
+<center>
+![](./image/选区_098.png)
+
+![](./image/选区_099.png)
+</center>
