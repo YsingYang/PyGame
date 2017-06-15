@@ -43,7 +43,7 @@ font.get_linesize()这个方法到底有与 font的大小有什么区别, 在例
 
 ### 2017. 6. 12
 
-####内容
+####内容 : Step4
 
 #####First
 本章内容主要是对alpha这个值的理解, alpha值主要影响着suface的透明度, 但由于图片格式不同, 所以不一定每种格式都会有alpha的值, 比如jpeg就没有
@@ -66,7 +66,7 @@ set_alpha
 
 ### 2017. 6. 13
 
-####内容
+####内容 Step5
 1. Frame-base movement
 
 
@@ -84,7 +84,7 @@ pygame.display.flip()
 
 ### 2017. 6. 14
 
-####内容
+####内容 Step6
 1. Time-Based movement
 昨天的程序中, 开始是的, 所以是Frame-base movement, 就是说移动距离每一帧是一样的, 所以会导致帧数会影响ball的移动速度, 为了避免机器性能间差异导致的图形移动差异, 可以采用Time-base movement, 如下代码所示, 每一帧的时间不同, 但总体1秒内移动的距离是一样的, 但是如果帧数过低, 会出现卡顿的效果
 
@@ -97,3 +97,11 @@ pygame.display.flip()
 
 ![](./image/选区_099.png)
 </center>
+
+
+### 2017.6 . 15
+####内容 Step7 Loading File, Subsurface
+其中的内容主要牵扯到了subsurface, 当我们需要surface中一部分时, 用到的一般就是subsurface, 
+* prettybackground.subsurface((x,y,snakerect.width, snakerect.height)) (类似于Rect的初始化, x, y, width, height)
+
+![](./image/选区_100.png)
