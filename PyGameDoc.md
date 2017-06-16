@@ -105,3 +105,9 @@ pygame.display.flip()
 * prettybackground.subsurface((x,y,snakerect.width, snakerect.height)) (类似于Rect的初始化, x, y, width, height)
 
 ![](./image/选区_100.png)
+
+### 2017. 6. 16
+####内容 Step8 Animation
+这章主要应该主要是在Sprite前的简单animation, 如小时候看到的一些翻漫一样, 就是几张图片的切换, 通过之前学的Frame-Base的循环, 也可以做到相应的效果.
+基本上这一章也没有什么相应的难点.
+![](./image/选区_103.png)
