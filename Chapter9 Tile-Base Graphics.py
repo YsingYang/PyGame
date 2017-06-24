@@ -140,7 +140,6 @@ def mazegame():
         milliSeconds = clock.tick(FPS)
         seconds = milliSeconds / 1000.0
         playTime +=  seconds
-
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 mainLoop = False
@@ -148,13 +147,13 @@ def mazegame():
                 if event.key == pygame.K_ESCAPE:
                     mainLoop = False
                 elif event.key == pygame.K_UP:
-                    dy -= 1
+                    dy -= 3
                 elif event.key == pygame.K_DOWN:
-                    dy += 1
+                    dy += 3
                 elif event.key == pygame.K_LEFT:
-                    dx -= 1
+                    dx -= 3
                 elif event.key == pygame.K_RIGHT:
-                    dx += 1
+                    dx += 3
         pygame.display.set_caption("[FPS]: %.2f dx: %i dy %i press cursor keys to move ball" % (clock.get_fps(), dx, dy))
         screen.blit(background, (0, 0))
         if dx > 0:
@@ -190,11 +189,11 @@ def mazegame():
         y1 = max(0, y1)
         y1 = min(y1, lines - 1)
 
-        x1 = int((pointx + dx)/ width)
+        x1 = int((pointx + dx) // width)
         x1 = max(0, x1)
         x1 = min(x1, columns - 1)
 
-        y2 = int((pointy + dy) / height)
+        y2 = int((pointy + dy) // height)
         y2 = max(0, y2)
         y2 = min(y2, lines - 1)
 
@@ -233,15 +232,3 @@ def mazegame():
 
 if __name__ == '__main__':
     mazegame()
-
-
-
-
-
-
-
-
-
-
-
-

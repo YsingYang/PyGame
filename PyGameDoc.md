@@ -116,3 +116,29 @@ pygame.display.flip()
 ####内容 Step9  Tile-based Graphics
 这章内容我更想把他理解为用图形元素构造出的简单游戏画面.., 具体的难点没有什么, 只要注意原矩阵与具体边框大小的比例缩放, 以及相应的 filp()操作. 
 ![](./image/选区_105.png)
+
+
+### 2017. 6. 23
+####内容 Step10 Using Sound and Music
+好像Pygame只支持了.wav, .ogg的音频文件
+
+* Initializing the Mixer, 
+```
+pre_init(frequency=22050, size=-16, channels=2, buffersize=4096)
+```
+
+* Loading music and sound files
+```
+try:
+    pygame.mixer.music.load(os.path.join('data', 'an-turr.ogg'))#load music
+    jump = pygame.mixer.Sound(os.path.join('data','jump.wav'))  #load sound
+    fail = pygame.mixer.Sound(os.path.join('data','fail.wav'))  #load sound
+except:
+    raise UserWarning, "could not load or play soundfiles in 'data' folder :-("
+```
+
+### 2017. 6. 24
+昨天没有太多时间所以短短的内容两天做完..
+这里只是简单的说明了对于pygame如果使用sound和music, 一般对于sound来说, 通常用一个变量记录下Sound, 在某种触发时候就.play(), 和对于music来说, 一般是用music.play, 不过应该也可以用一个变量记录相应的music吧, 然后在某个时候调用其play()
+
+顺便可以提下可以用pygame.mixer.music.get_busy(), 返回bool值确定当前背景音乐是否有触发
