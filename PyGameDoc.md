@@ -142,3 +142,43 @@ except:
 这里只是简单的说明了对于pygame如果使用sound和music, 一般对于sound来说, 通常用一个变量记录下Sound, 在某种触发时候就.play(), 和对于music来说, 一般是用music.play, 不过应该也可以用一个变量记录相应的music吧, 然后在某个时候调用其play()
 
 顺便可以提下可以用pygame.mixer.music.get_busy(), 返回bool值确定当前背景音乐是否有触发
+
+
+### 2017. 6. 26
+####内容 Step 011 - Keys, Rotating and Zoom
+ 这里介绍了与pygame.event.get()类似的一个方法, pygame.key.get_pressed(), 这个方法返回keyboard完成状态, , 同时, 这个state由0/1值组成的元组构成, 0 value表示未被按下, 1表示被按下
+ Example :
+ ```
+ pressedkeys = pygame.key.get_pressed()
+ if pressedkeys[pygame.K_x]:
+    do_something()
+ ```
+ 好像教程说可以实现多个建同时按下的正确判断效果
+ > It is possible to press several keys together, like left and right cursor, and the program will move the correctly (not at all in this case):
+ 另外精度似乎没有pygame.event.type高
+ > Note that this method of keyboard control is less precise than the if pygame.event.type… - method because there is no guarantee that a fast key-pressing will be noticed by pygame
+
+####实现图片
+![](/home/ysing/PycharmProjects/PyGame/image/选区_118.png)
+
+####问题
+1. 首先, snake作为subsurface, 当snake一部分移出屏幕时, 会出现background会有糊屏现象, 当snake完全移动出屏幕时, 会出现valueError
+
+ * 这里有一个最简单的方法解决就是在最后加上
+ ````
+ startX = max(0, startX)
+ startY = max(0, startY)
+ ````
+ 那么就不会有snake.rect != dirty.rect了, 不过这种方法的问题是, snake无法移动出background外
+ 
+ 另外加上另一句判断即可
+ ```
+         if dirtyRect != snakeRect :
+            screen.blit(background, (0, 0))
+        else:
+            screen.blit(dirty, (round(startX, 0), round(startY, 0)))
+    except:
+        startX = 0
+        startY = 0
+ ```
+ 但这样处理的速度相对来说是较慢的, 因为需要重新绘制整个background, 如果完全越界, 则将x, y重新定义在0, 0

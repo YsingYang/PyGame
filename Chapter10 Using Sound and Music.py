@@ -7,7 +7,7 @@ pygame.mixer.pre_init(44100, -16, 2, 2048)
 pygame.init()
 
 try:
-    pygame.mixer.music.load(os.path.join('data', 'an-turr.ogg'))
+    pygame.mixer.music.load(os.path.join('resource', 'an-turr.ogg'))
     fail = pygame.mixer.Sound(os.path.join('resource','fail.wav'))
     jump = pygame.mixer.Sound(os.path.join('resource', 'jump.wav'))
 
@@ -24,7 +24,7 @@ screen.blit(background, (0, 0))
 clock = pygame.time.Clock()
 mainLoop = True
 FPS = 30
-while True:
+while mainLoop:
     milliseconds = clock.tick(FPS)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -33,8 +33,10 @@ while True:
             if event.key == pygame.K_ESCAPE:
                 mainLoop = False
             if event.key == pygame.K_a:
+                print('Fail Key  pressed')
                 fail.play()
             if event.key ==pygame.K_b:
+                print('Jump key pressed')
                 jump.play()
     pygame.display.set_caption("FPS: {:.2f} Press [a] or [b] to play sound effects".format(clock.get_fps()))
     pygame.display.flip()
