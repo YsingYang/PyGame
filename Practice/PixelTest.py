@@ -39,13 +39,14 @@ while True:
 
     if pygame.mouse.get_pressed()[0]:
         for component in range(3):
-            if component * 80 and y < (component + 1) * 80:
-                color[component] = int((x/639.)*255.)
+            if y > component * 80 and y < (component + 1) * 80:
+                color[component] = int((x/639.)*255.) #将对应color值的index, 并且根据mouse的x值调整相应的值
         pygame.display.set_caption("PyGame Color Test - " + str(tuple(color)))
 
     for component in range(3):
         pos = (int ((color[component]/255.) * 639), component * 80 + 40)
         pygame.draw.circle(screen, (255, 255, 255), pos, 20)
+    #重新绘制3个圆圈的位置,
 
     pygame.draw.rect(screen, tuple(color), (0, 240, 640, 240))
 
