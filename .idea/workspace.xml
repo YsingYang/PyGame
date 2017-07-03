@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c03d14b-640c-483b-9f1e-0425f2d94c9a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Step 014 - Pygame sprites.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step 013 - Catch the Thief Game.py" afterPath="$PROJECT_DIR$/Step 013 - Catch the Thief Game.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,6 +29,7 @@
     <SUITE FILE_PATH="coverage/PyGame$Chapter10_Using_Sound_and_Music.coverage" NAME="Chapter10 Using Sound and Music Coverage Results" MODIFIED="1498461579430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame$Chapter12_Text.coverage" NAME="Chapter12 Text Coverage Results" MODIFIED="1498554191827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame$Chapter3_Surfaces_and_Drawing.coverage" NAME="Chapter3 Surfaces and Drawing Coverage Results" MODIFIED="1496980249680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PyGame$Step_014___Pygame_sprites.coverage" NAME="Step 014 - Pygame sprites Coverage Results" MODIFIED="1499073676557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PyGame$Step_013___Catch_the_Thief_Game.coverage" NAME="Step 013 - Catch the Thief Game Coverage Results" MODIFIED="1498903531582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -102,11 +103,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Step 013 - Catch the Thief Game.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Step 013 - Catch the Thief Game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Step 013 - Catch the Thief Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="3618">
               <caret line="201" column="161" lean-forward="false" selection-start-line="201" selection-start-column="161" selection-end-line="201" selection-end-column="161" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Step 014 - Pygame sprites.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Step 014 - Pygame sprites.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -157,6 +170,7 @@
         <option value="$PROJECT_DIR$/Chapter12 Text.py" />
         <option value="$PROJECT_DIR$/Practice/PixelTest.py" />
         <option value="$PROJECT_DIR$/Step 013 - Catch the Thief Game.py" />
+        <option value="$PROJECT_DIR$/Step 014 - Pygame sprites.py" />
       </list>
     </option>
   </component>
@@ -167,10 +181,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="471" />
-    <option name="y" value="263" />
+    <option name="x" value="678" />
+    <option name="y" value="38" />
     <option name="width" value="1853" />
-    <option name="height" value="1056" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -188,8 +202,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,26 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Step 013 - Catch the Thief Game">
-    <configuration default="false" name="Chapter10 Using Sound and Music" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PyGame" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Chapter10 Using Sound and Music.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.Step 014 - Pygame sprites">
     <configuration default="false" name="Chapter11 - Keys, Rotating and Zoom" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -318,6 +313,25 @@
       <module name="PyGame" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Step 013 - Catch the Thief Game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Step 014 - Pygame sprites" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PyGame" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Step 014 - Pygame sprites.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -472,19 +486,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Chapter10 Using Sound and Music" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Chapter11 - Keys, Rotating and Zoom" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Chapter12 Text" />
-      <item index="3" class="java.lang.String" itemvalue="Python.PixelTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.Step 013 - Catch the Thief Game" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Chapter11 - Keys, Rotating and Zoom" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Chapter12 Text" />
+      <item index="2" class="java.lang.String" itemvalue="Python.PixelTest" />
+      <item index="3" class="java.lang.String" itemvalue="Python.Step 013 - Catch the Thief Game" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Step 014 - Pygame sprites" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Step 013 - Catch the Thief Game" />
-        <item index="1" class="java.lang.String" itemvalue="Python.PixelTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Chapter12 Text" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Chapter11 - Keys, Rotating and Zoom" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Chapter10 Using Sound and Music" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Step 014 - Pygame sprites" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Step 013 - Catch the Thief Game" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PixelTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Chapter12 Text" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Chapter11 - Keys, Rotating and Zoom" />
       </list>
     </recent_temporary>
   </component>
@@ -502,19 +516,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="471" y="263" width="1853" height="1056" extended-state="0" />
+    <frame x="678" y="38" width="1853" height="977" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1856449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1856449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40805224" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40714285" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -536,11 +550,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resource/war3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Practice/EventCatch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -896,8 +905,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Step 013 - Catch the Thief Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="3618">
           <caret line="201" column="161" lean-forward="false" selection-start-line="201" selection-start-column="161" selection-end-line="201" selection-end-column="161" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step 014 - Pygame sprites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="69" selection-end-line="40" selection-end-column="69" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
